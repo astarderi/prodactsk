@@ -1,11 +1,18 @@
 import './Styles.css';
-import Product from './compenets/Product'; // הרכיב של המוצרים
+import Product from './compenets/Product'; 
+import Cart from './compenets/Cart'; 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Product />
+    <Router>
+    <div>
+      <Routes>
+        <Route path="/" element={<Product />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
     </div>
+  </Router>
   );
 }
 

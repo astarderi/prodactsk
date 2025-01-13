@@ -8,7 +8,7 @@ function ProductItem(props) {
       <div className="product-item__details">
         <div className="product-item__title">{props.title}</div>
         <p>$ {props.price}</p>
-        <button onClick={props.addToCart} className="add-to-cart btn btn-warning">Add to Cart</button>
+        <button onClick={props.addToCart} className=" btn btn-danger">Add to Cart</button>
       </div>
     </div>
   );
